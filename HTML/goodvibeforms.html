@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Good Vibes Form</title>
+    <link rel="stylesheet" href="../CSS/goodvibeforms.css">
+</head>
+<body>
+    <nav>
+        <div id="main">
+            <div id="img"><a href="https://codepen.io/" target="_blank"><img src="../IMG/Good Vibes Form — Mozilla Firefox 18-09-2022 1.38.28 PM (2).png" alt="">
+            </a></div>
+            <div id="title">
+                <h4>Good Vibes Form </h4>
+                <a href="https://codepen.io/laurencenairne" target="_blank" id="Laurence">Laurence</a>
+                <button id="follow"><a href="https://codepen.io/login?type=follow" target="_blank">+ Follow</a></button>
+            </div>
+            <div id="but">
+
+                <div><button id="heart" class="button">🤍</button></div>
+                <div><button id="view" class="button">View in Editor</button></div>
+                <div><button id="signup" class="button">Sign Up</button></div>
+                <div><button id="login" class="button">Log In</button></div>
+            </div>
+        </div>
+    </nav>
+    <div id="body1">
+        <h1>Good Vibes Form</h1>
+        <div id="body2">
+            <h2>Tell us something positive that happened to you today </h2><br>
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name"><br><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email address"><br><br>
+                <label for="scale">On a scale of 1 - 10,how good was it?</label>
+                <input type="number" id="scale" placeholder="Enter number between 1 and 10" min="1" max="10" > <br><br>
+                <label for="happen">Where did it happen?</label>
+                <select name="wdih" id="happen">
+                    <option value="1">At home</option>
+                    <option value="2">On my commute</option>
+                     <option value="3">At work</option>
+                    <option value="4">On my street</option>
+                    <option value="5">others</option>
+                </select><br><br>
+                
+                <div id="time">
+                    <label for="timeofday">At what time of day did it happen?</label>
+                    <div id="radio">
+                        <div id="morning"><input type="radio" id="timeofday" >Morning <br></div>
+                        <div id="afternoon"><input type="radio" id="timeofday" class="time">Afternoon <br></div>
+                        <div id="evening"><input type="radio" id="timeofday" class="time">Evening <br><br></div>
+                    </div>
+
+                </div>
+                
+                <div id="emo">
+                <label for="emotion">What emotions did you experience? <br>(Select all that apply) </label>
+                    <div id="check">
+                        <input type="checkbox" id="emotion" class="emotions">Excited <br>
+                        <input type="checkbox" id="emotion" class="emotions">Humbled <br>
+                        <input type="checkbox" id="emotion" class="emotions">Elated <br>
+                        <input type="checkbox" id="emotion" class="emotions">Loved <br>
+                        <input type="checkbox" id="emotion" class="emotions">Enthhusiastic <br> 
+                    </div><br>
+                </div><br><br>
+                <label for="describe">Please describe your positive experience.</label>
+                <textarea name="describes" id="describe" cols="30" rows="2" placeholder="Enter your experience here..."></textarea><br><br>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
